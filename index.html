@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GamerXise | Transform Your Body and Mind</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font-family: Open Sans, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			background-color: #F7F7F7;
+			color: #333;
+		}
+		
+		.header {
+			background-color: #008000;
+			color: #FFFFFF;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		.hero {
+			background-image: linear-gradient(to bottom, #008000, #33CC33);
+			background-size: 100% 300px;
+			background-position: 0% 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #FFFFFF;
+			font-size: 48px;
+			font-weight: bold;
+		}
+		
+		.hero::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			transition: opacity 0.5s;
+		}
+		
+		.hero:hover::after {
+			opacity: 0;
+		}
+		
+		.about {
+			background-color: #F7F7F7;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		.products {
+			background-color: #F7F7F7;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.product {
+			margin: 20px;
+			background-color: #FFFFFF;
+			padding: 20px;
+			border: 1px solid #333;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.product:hover {
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		}
+		
+		.testimonials {
+			background-color: #F7F7F7;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.testimonial {
+			margin: 20px;
+			background-color: #FFFFFF;
+			padding: 20px;
+			border: 1px solid #333;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.testimonial:hover {
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		}
+		
+		.blog {
+			background-color: #F7F7F7;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.blog-post {
+			margin: 20px;
+			background-color: #FFFFFF;
+			padding: 20px;
+			border: 1px solid #333;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.blog-post:hover {
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		}
+		
+		.contact {
+			background-color: #F7F7F7;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		.cta {
+			background-color: #008000;
+			color: #FFFFFF;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		
+		.cta:hover {
+			background-color: #33CC33;
+		}
+		
+		.social-links {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.social-link {
+			margin: 10px;
+			background-color: #FFFFFF;
+			padding: 10px;
+			border: 1px solid #333;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.social-link:hover {
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#hero">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#products">Products/Services</a></li>
+				<li><a href="#testimonials">Testimonials</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="hero">
+			<h1>Transform Your Body and Mind with GamerXise</h1>
+			<p>Get fit while playing your favorite games</p>
+			<button class="cta">Get Started</button>
+		</section>
+		<section id="about">
+			<h2>About GamerXise</h2>
+			<p>Unlock your potential: fitness and gaming, together</p>
+		</section>
+		<section id="products">
+			<h2>Our Products and Services</h2>
+			<div class="columns">
+				<div class="column">
+					<h3>GamerXise Monthly</h3>
+					<p>Get fit while playing your favorite games</p>
+					<button class="cta">Learn More</button>
+				</div>
+				<div class="column">
+					<h3>GamerXise Personalized Coaching</h3>
+					<p>Improve your reaction time, brain-body relationship, and overall health</p>
+					<button class="cta">Book a Session</button>
+				</div>
+				<div class="column">
+					<h3>GamerXise Programming</h3>
+					<p>Achieve your fitness goals with personalized coaching and guidance</p>
+					<button class="cta">Discover</button>
+				</div>
+			</div>
+		</section>
+		<section id="testimonials">
+			<h2>What Our Customers Say</h2>
+			<div class="testimonial">
+				<p>I lost 10 pounds in 3 months while playing my favorite games with GamerXise</p>
+				<p>- John D., 32</p>
+			</div>
+			<div class="testimonial">
+				<p>GamerXise helped me improve my focus and reaction time, and I'm now a top-ranked gamer</p>
+				<p>- Emily W., 28</p>
+			</div>
+			<div class="testimonial">
+				<p>I was skeptical at first, but GamerXise's personalized coaching and workouts really delivered results</p>
+				<p>- Michael T., 35</p>
+			</div>
+		</section>
+		<section id="blog">
+			<h2>Latest Blog Posts</h2>
+			<ul>
+				<li><a href="#">How to Improve Your Gaming Performance</a></li>
+				<li><a href="#">The Benefits of Gaming for Fitness</a></li>
+				<li><a href="#">GamerXise's Top Tips for a Healthy Gaming Lifestyle</a></li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Get in Touch</h2>
+			<p>Get fit while playing your favorite games</p>
+			<form>
+				<input type="email" placeholder="Email Address">
+				<button class="cta">Subscribe</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="https://www.facebook.com">Facebook</a></li>
+				<li><a href="https://www.twitter.com">Twitter</a></li>
+				<li><a href="https://www.instagram.com">Instagram</a></li>
+			</ul>
+		</nav>
+		<p>&copy; 2023 GamerXise</p>
+	</footer>
+	<script>
+		// Add JavaScript code here
+	</script>
+</body>
+</html>
